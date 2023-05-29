@@ -1,0 +1,13 @@
+<!-- course component -->
+<div class="container">
+    <div class="course-details" *ngFor="let i of  course">
+        <div class="image">
+            <img [src]="i.image" alt="{{i.name}} Image">
+
+        </div>
+        <div class="id"> {{i.id}}</div>
+        <div class="name">{{i.name}}</div>
+        <div class="cost">{{i.cost}}</div>
+        <div class="details">{{i.details}}</div>
+    </div>
+</div>

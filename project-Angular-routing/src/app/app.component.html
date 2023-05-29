@@ -1,0 +1,33 @@
+<div class="main-container">
+  <div class="logo">
+    <button>    <h1>Kohji</h1></button>
+
+  </div>
+  <div class="link-container">
+   <!--  navigation from one page to another page  using href -->
+    <!--  navigation from one page to another page  using routerLink -->
+       <ul>
+     <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="">Home</a></li>
+      
+      <li  [routerLinkActive]="'active'" ><a routerLink="About">About</a></li>
+      <li  [routerLinkActive]="'active'"><a [routerLink]="'Contract'">Contract</a></li>
+      <li  [routerLinkActive]="'active'"><a [routerLink]="['Courses']">Courses</a></li>
+    </ul>
+      </div>
+  <div class="search">
+    <input type="search" placeholder="search">
+    <button type="submit">Search</button>
+  </div>
+</div>
+<div class="body-container">
+ 
+    <!-- selector to access component  -->
+    <!-- <app-home></app-home>
+    <app-about></app-about>
+    <app-contract></app-contract>
+    <app-courses></app-courses> -->
+    <router-outlet>
+  </router-outlet>
+
+</div>
+
